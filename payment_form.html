@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <title>payment form</title>
+    
+   <style>
+       .background{
+           background-image: url("img/pay.jpg");
+           background-repeat: no-repeat;
+           background-size: 2100px;
+           background-position: center;
+          background-attachment: scroll;
+           
+           height: 900px;
+           width: 1300px;
+       }
+       h1{
+           color: rgb(44, 3, 82); text-align: center; text-decoration: underline; word-spacing: 15px; 
+       }
+       h3{
+           color: red;
+       }
+       p{
+           color: rgb(236, 25, 155); font-weight: 800; text-indent: 50px;
+       }
+       h1,p,h3{
+        font-family: 'Imperial Script', cursive;}
+       p{
+           line-height: 2;
+       }
+   </style>
+</head>
+<body>
+    <div class="background">
+    
+    <form action="">
+
+    <h1>Payment Form</h1>
+    <h2>Contact Information</h2>
+    <h3>*fields are mandatory</h3>
+    <p>Name:* <input type="text" required></p>
+    <fieldset>
+        <legend>Gender*</legend>
+    <p> Male<input type="radio" name="gender" id=""> Female<input type="radio" name="gender" id=""required>
+     </p>
+</fieldset>
+<p>
+    Address:* <textarea name="address" id="address" cols="80" rows="10"></textarea>
+</p>
+<p>
+    Email:* <input type="email"required>
+</p>
+<p>
+    Pincode:* <input type="number" name="number" id="number"required>
+</p>
+<hr>
+<h1>Payment information</h1>
+<p>Card type:* <select name="card_type" id="card_type"required>
+    <option value="">__select your card_type</option>
+    <option value="Rupay">Rupay</option>
+    <option value="visa">Visa</option>
+    <option value="Master">Master</option>
+</select></p>
+<P>
+    Card number:* <input type="number"required>
+</P>
+<p>
+    Expiration date:* <input type="date" name="date" id="date"required>
+</p>
+<p>
+    CVV:* <input type="password" name="number" id="number"required>
+</p>
+<p style=>
+    <input type="submit" value="Pay Now">
+</p>
+</form>
+</div>
+
+
+</body>
+</html>
